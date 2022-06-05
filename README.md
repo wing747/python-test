@@ -1,2 +1,2 @@
-# python-test
-python test
+# python-note
+my python note
