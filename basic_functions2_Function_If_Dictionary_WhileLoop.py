@@ -80,15 +80,39 @@ print(weekdic.get("BBB", "Invalid key"))
 #    print(i)
 #print("Done with loop")
 
-answer = "one punch"
-guess = ""
-guess_count = 0
-guess_limit = 4
-while guess != answer and guess_count < guess_limit:
-    guess = (input("Enter your guess: "))
-    guess_count += 1
+#answer = "one punch"
+#guess = ""
+#guess_count = 0
+#guess_limit = 4
+#while guess != answer and guess_count < guess_limit:
+#    guess = (input("Enter your guess: "))
+#    guess_count += 1
 
-if guess == answer:
-    print("You win!")
-else:
-    print("You lose! hohoho")
+#if guess == answer:
+#    print("You win!")
+#else:
+#    print("You lose! hohoho")
+
+#for test in "Hero Academia":
+#    print(test)
+#friends = ["Nick", "Josh", "Ian", "Aaron"]
+#for text in friends:
+#    print(text)
+#for index in range(len(friends)):
+#    print(friends[index])
+#for qqq in range(5):
+#    print (qqq)
+#for index in range(3,10):
+#    print (index)
+
+
+print(2**3)
+
+def pppower(basic, power):
+    result = 1
+    for inpow in range(power):
+        result *= basic
+    return result
+
+print(pppower(2,4))
+
