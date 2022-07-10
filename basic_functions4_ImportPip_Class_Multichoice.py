@@ -38,8 +38,25 @@ student1 = studenttt("Jim", "Business", 3.1, False)
 student2 = studenttt("Paul", "History", 2.5, True)
 print(student2.gpa)
 
-question_prompts = [
-    "What color are shuttlecocks?\n(A) white\n(B) black\n(C) yellow\n"
-    "What color is my mind on Monday?\n(A) red\n(B) blue\n(C) green\n"
+from Question import questionnn
+q_prompts = [
+    "What color are shuttlecocks?\n(A) white\n(B) black\n(C) yellow\n",
+    "What color is my mind on Monday?\n(A) red\n(B) blue\n(C) green\n",
     "What color are elephants?\n(A) purple\n(B) brown\n(C) grey\n"
 ]
+
+ques = [
+    questionnn(q_prompts[0], "a"),
+    questionnn(q_prompts[1], "b"),
+    questionnn(q_prompts[2], "c"),
+]
+
+def run_test(questions):
+    score = 0
+    for question in questions:
+        answer = input(question.prompt)
+        if answer == question.answer:
+            score +=1
+    print("You got " + str(score) + "/" + str(len(questions)) + " correct")
+
+run_test(ques)
